@@ -1,3 +1,3 @@
 ## Pokédex
-Messing around with the Pokémon API
+Messing around with the [Pokémon API](http://www.pokeapi.co/)
 

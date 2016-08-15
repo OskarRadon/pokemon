@@ -1,3 +1,6 @@
+import _ from 'lodash';
+import $ from 'jquery';
+
 $(function() {
 
   // represents the currently selected pokemon

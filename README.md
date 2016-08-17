@@ -6,6 +6,7 @@ Run these commands in the project root directory to get started:
 
 * `npm install`
 * `npm run build`
+* `nodemon index.js`
 
 Then open the index.html file in your browser to view the site.
 

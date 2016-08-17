@@ -15,13 +15,14 @@ function addToTeam(team, displayed) {
 }
 
 $(() => {
-  const POKEMON_API_URL = 'http://pokeapi.co/api/v2/pokemon/';
+  const POKEMON_API_URL = 'http://localhost:3000/pokemon/';
 
   let displayed = null; // the currently displayed pokemon
   let selected = null; // the currently selected pokemon in team
   const team = []; // list of pokemon in team
 
   function display(pokemon) {
+    console.log(pokemon);
     displayed = pokemon;
     // stop loading animation
     $('.loading-spinner').hide();

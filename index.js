@@ -5,6 +5,11 @@ const app = express();
 app.use(express.static('client'));
 app.use(express.static('_build'));
 
+
+const pokemon = JSON.parse(fs.readFileSync('pokemon.json'));
+
+
+
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });

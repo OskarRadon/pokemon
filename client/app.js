@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Search from './components/Search';
+
 const app = document.getElementById('app');
 
 ReactDOM.render(
@@ -9,14 +11,7 @@ ReactDOM.render(
 
       <h2 class="Orbitron">Welcome to Pokedex!</h2>
 
-      <section class="search">
-        <p>Search for a pokemon by name.</p>
-        <form class="poke-search" method="post">
-          <input type="text" name="name" value="" class="searchbar" />
-          <input name="name" value="Search" type="submit" />
-        </form>
-        <i class="fa fa-spinner fa-pulse fa-3x fa-fw loading-spinner"></i>
-      </section>
+	  <Search />
 
       <section class="search-results">
         <p class="error-message"></p>

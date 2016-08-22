@@ -20,7 +20,8 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel',
         query: {
-          presets: ['es2015-native-modules'],
+          presets: ['react', 'es2015-native-modules'],
+          plugins: ['react-html-attrs', 'transform-class-properties'],
         },
       },
     ],

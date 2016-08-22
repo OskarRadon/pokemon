@@ -3,3 +3,4 @@
 **/.sass-cache
 **/.sass-cache/*
 _build
+client/bundle.js

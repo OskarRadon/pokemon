@@ -2,57 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import Search from './components/Search';
+import SelectedPokemon from './components/SelectedPokemon';
+import Team from './components/Team';
 
 const app = document.getElementById('app');
 
 ReactDOM.render(
 	<main>
-		<h1 class="title">Pokedex</h1>
-
-      <h2 class="Orbitron">Welcome to Pokedex!</h2>
-
-	  <Search />
-
-      <section class="search-results">
-        <p class="error-message"></p>
-        <img class="pokeSprite" src="" alt="" />
-        <div class="stats">
-          <div class="hp"><p>HP</p></div>
-          <div class="attack"><p>Attack</p></div>
-          <div class="defense"><p>Def</p></div>
-          <div class="special-attack"><p>Special Attack</p></div>
-          <div class="special-defense"><p>Special Defense</p></div>
-          <div class="speed"><p>Speed</p></div>
-        </div>
-        <button type="button" class="add">Add to team</button>
-      </section>
-
-      <section class="team">
-        <div id="pokemon0">
-          <img src="" alt="" />
-        </div>
-
-        <div id="pokemon1">
-          <img src="" alt="" />
-        </div>
-
-        <div id="pokemon2">
-          <img src="" alt="" />
-        </div>
-
-        <div id="pokemon3">
-          <img src="" alt="" />
-        </div>
-
-        <div id="pokemon4">
-          <img src="" alt="" />
-        </div>
-
-        <div id="pokemon5">
-          <img src="" alt="" />
-        </div>
-      </section>
-      <button type="button" class="remove">Remove selected</button>
+		<h1 className="title">Pokedex</h1>
+		<h2 className="Orbitron">Welcome to Pokedex!</h2>
+		<Search />
+		<SelectedPokemon />
+		<Team />
 	</main>,
 app);
 

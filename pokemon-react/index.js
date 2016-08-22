@@ -3,8 +3,7 @@ const fs = require('fs');
 
 const app = express();
 
-app.use(express.static('client'));
-app.use(express.static('_build'));
+app.use(express.static('build'));
 
 
 const pokemonList = JSON.parse(fs.readFileSync('pokemon.json'));
@@ -24,6 +23,6 @@ app.get('/pokemon/:name', (req, res) => {
   res.send(pokeMap.get(search));
 });
 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!');
+app.listen(3030, () => {
+  console.log('Example app listening on port 3030!');
 });
